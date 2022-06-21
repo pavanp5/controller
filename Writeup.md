@@ -44,23 +44,23 @@ The I value is integral of all the errors with time. With time as the error dimi
 
 **Test Results**
 The Car using the PID Parameters:
-<img src="\img\exp1\exp1_Navigation.PNG"/>
+<img src="img/exp1/exp1_Navigation.PNG"/>
 
 **Steer Plot:**
 The x-axis is the iterations of the PID controller while the vehicle is running and y-axis is the steer error or control output for steer.
-<img src="\img\exp1\Steer_plot_exp1.PNG"/>
+<img src="img/exp1/Steer_plot_exp1.PNG"/>
 
 **Throttle Plot:**
 The x-axis is the iterations of the PID controller while the vehicle runs and the y-axis is the throttle error, controller output of throttle and controller output of the break.
-<img src="\img\exp1\throttle_plot_exp1.PNG"/>
+<img src="img/exp1/throttle_plot_exp1.PNG"/>
 
-How would you design a way to automatically tune the PID parameters?
+**How would you design a way to automatically tune the PID parameters?**
 The Twiddle algorithm can be used to automatically tune the PID parameters.
 The twiddle algorithm is describes by Sebastian Thurn in the course. 
 
 
-PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
-Find at least 2 pros and cons for model free versus model based.
+**PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+Find at least 2 pros and cons for model free versus model based.**
 
 The model based controllers might produce good performance on the known scenarios
 compared to the model free controller. Whereas the model free controller is more generalizable to un-known new scenarios too.
@@ -68,6 +68,6 @@ compared to the model free controller. Whereas the model free controller is more
 The development time might be reduced with a model free controller is it can be tuned to multiple vehicles using the same algorithm.
  
 
-What would you do to improve the PID controller?
+**What would you do to improve the PID controller?**
 
 The PID coefficients for a moderate speed might be different from the PID coefficients for a high speed driving. Hence based on a threshold speeds we could have different set of PID coefficients kick in with some base values chosen on from manual tuning and they auto finetune using Twiddle while running.
